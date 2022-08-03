@@ -1,7 +1,7 @@
 name: LAMP Deployment
 
 on:
-  workflow_dispatch:
+    workflow_dispatch:
 
 jobs:
   linting:
