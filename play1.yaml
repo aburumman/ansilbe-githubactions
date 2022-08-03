@@ -25,3 +25,20 @@
     apt:
       name: php8.1-mysql
       state: present
+
+
+- name: Deploy Application package
+  hosts: webservers
+  become: true
+  tasks:
+    - name: Setup php file
+      copy:
+        src: files/index.php
+        dest: /var/www/html/index.php
+        owner: www-data
+        group: www-data
+        mode: 0644
+    - name:
+      file:
+        path: /var/www/html/index.html
+        state: absent
