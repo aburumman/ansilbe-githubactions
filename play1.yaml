@@ -25,6 +25,10 @@
     apt:
       name: php8.1-mysql
       state: present
+  - name: Check for git
+    apt:
+      name: git
+      state: present
 
 
 - name: Deploy Application package
