@@ -38,7 +38,7 @@
         owner: www-data
         group: www-data
         mode: 0644
-    - name:
+    - name: Remove the html file
       file:
         path: /var/www/html/index.html
         state: absent
