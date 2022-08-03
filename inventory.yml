@@ -3,6 +3,7 @@ all:
   children:
     webservers:
       hosts:
-        52.201.226.17
+        #52.201.226.17
+        52.200.36.53
       vars:
         ansible_user: ubuntu
