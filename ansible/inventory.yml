@@ -1,0 +1,9 @@
+---
+all:
+  children:
+    webservers:
+      hosts:
+        18.217.167.76
+      vars:
+        ansible_user: cloud_user
+        ansible_ssh_pass: '{{ ssh_password }}'
